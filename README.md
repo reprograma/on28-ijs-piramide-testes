@@ -324,7 +324,5 @@ https://www.lambdatest.com/blog/playwright-vs-selenium-vs-cypress/
 * https://github.com/public-apis/public-apis
 ---
 
-<p align="center">
 Desenvolvido com :purple_heart: por [Isabelle Galvão](https://github.com/isabellegalvao)
-</p>
 
