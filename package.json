@@ -10,12 +10,20 @@
   },
   "repository": {
     "type": "git",
+    "url": "git+https://github.com/vivianeluzz/on28-ijs-piramide-testes.git"
+
     "url": "git+https://github.com/reprograma/on28-ijs-piramide-testes.git"
+
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
+    "url": "https://github.com/vivianeluzz/on28-ijs-piramide-testes/issues"
+  },
+  "homepage": "https://github.com/vivianeluzz/on28-ijs-piramide-testes#readme",
+  "devDependencies": {
+
     "url": "https://github.com/reprograma/on28-ijs-piramide-testes/issues"
   },
   "homepage": "https://github.com/reprograma/on28-ijs-piramide-testes#readme",
