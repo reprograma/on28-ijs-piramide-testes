@@ -1,3 +1,11 @@
+<!-- // TODO Exercício 2 - Cenários e casos de teste: Escreva os cenários de teste para o Pinterest, considere as funcionalidades descritas no abaixo. Os cenários de teste não precisam ser completos, mas devem contemplar as principais fluxos da funcionalidade.
+
+Pesquisa por Termo
+
+Criação de Board
+
+Upload de Pin -->
+
 Contexto comum a todas as funcionalidades:
 Dado que o usuário tem um dispositivo com acesso à internet
 E o navegador está atualizado
