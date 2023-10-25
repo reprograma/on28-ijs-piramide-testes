@@ -5,7 +5,7 @@ describe('Testes para Endpoints da API de Localidades do IBGE', () => {
     it('Deve retornar informações de países com sucesso', async () => {
         const response = await request(api).get('/paises');
         expect(response.status).toBe(200);
-        expect(response.body[0].nome).toEqual('Afeganistão'); s
+        expect(response.body[0].nome).toEqual('Afeganistão');
     });
 
     it('Deve retornar informações da região com sucesso', async () => {
