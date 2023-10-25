@@ -1,4 +1,4 @@
-const request = require('superit');
+const request = require('supertest');
 const api = "https://servicodados.ibge.gov.br/api/v1/localidades";
 
 describe('Testes para Endpoints da API de Localidades do IBGE', () => {
