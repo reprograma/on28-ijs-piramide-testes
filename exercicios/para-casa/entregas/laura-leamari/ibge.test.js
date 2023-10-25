@@ -1,11 +1,6 @@
 const request = require("supertest");
 const api = "https://servicodados.ibge.gov.br/api/v1/localidades"
 
-// distritos -distritos por id -distritos por estados -distritos por região
-// testar 4 endpoints
-
-// Cenários tristes para teste: testar nome de estado qu enão existe, id que não tem, retornar status diferentes
-
 describe("IBGE Endpoints", () => {
 
   test("Deve retornar status 200", async () => {
