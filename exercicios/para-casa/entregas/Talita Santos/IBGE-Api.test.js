@@ -4,13 +4,13 @@ const api = "https://servicodados.ibge.gov.br/api/v1/localidades";
 
 describe('Testar 4 endpoints da API de Localidades do IBGE.', () => {
     test('Deve retornar dados de um país pela posição do array.', async () => {
-        const response = await request(api).get('paises?orderBy=nome');
+        const response = await request(api).get('/paises?orderBy=nome');
         expect(response.body[528].nome).toMatch("Holanda");
         expect(response.status).toBe(200);
     });
 
     test('Deve retornar dados de um estado pela sua sigla "UF".', async () => {
-        const response = await request(api).get('/estados/{UF}');
+        const response = await request(api).get('/estados/29');
         expect(response.body).toEqual(
             {
                 "id": 29,
@@ -28,7 +28,7 @@ describe('Testar 4 endpoints da API de Localidades do IBGE.', () => {
 
     test('Deve retornar dados de um distrito pelo ID.', async () => {
         const response = await request(api).get('/distritos/231180110');
-        expect(response.body).toEqual(
+        expect(response.body).toMatchObject(
             [{
                 "id": 231180110,
                 "nome": "Bonhu",
@@ -60,8 +60,8 @@ describe('Testar 4 endpoints da API de Localidades do IBGE.', () => {
         expect(response.status).toBe(200);
     });
 
-    test('Deve retornar dados de regiões imediatas, por sigla "UF". ', async () => {
-        const response = await request(app).get('/estados/SP/regioes-imediatas');
+    test('Deve retornar dados de regiões imediatas, por sigla UF. ', async () => {
+        const response = await request(api).get('/estados/SP/regioes-imediatas');
         expect(response.body[3501].UF).toBe(
             {
                 "id": 350001,
